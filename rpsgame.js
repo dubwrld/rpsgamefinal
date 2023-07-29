@@ -1,6 +1,6 @@
 const shurikenBtn = document.querySelector("#shuriken");
 const paperbombBtn = document.querySelector("#paperbomb");
-const kunaiBtn = document.querySelector("kunai");
+const kunaiBtn = document.querySelector("#kunai");
 
 shurikenBtn.addEventListener("click", playGame("shuriken"));
 paperbombBtn.addEventListener("click", playGame("paperbomb"));
