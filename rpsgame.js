@@ -2,9 +2,10 @@ const shurikenBtn = document.querySelector("#shuriken");
 const paperbombBtn = document.querySelector("#paperbomb");
 const kunaiBtn = document.querySelector("#kunai");
 
-shurikenBtn.addEventListener("click", playGame("shuriken"));
-paperbombBtn.addEventListener("click", playGame("paperbomb"));
-kunaiBtn.addEventListener("click", playGame("kunai"));
+shurikenBtn.addEventListener("click", () => playGame("shuriken"));
+paperbombBtn.addEventListener("click", () => playGame("paperbomb"));
+kunaiBtn.addEventListener("click", () => playGame("kunai"));
+// () => arrow function used to callback () a function =>
 
 //event listener adds event such as "click" to what you are calling
 // for example shurikenBtn is the event that gets clicked to playGame
@@ -16,6 +17,7 @@ function playGame(userChoice) {
   //  the choices = what is in the brackets ["shuriken", "paperbomb", "kunai"]
   const computerChoice = choices[Math.floor(Math.random() * 3)];
   //   const computerChoice is a constant(const) variable where the computer is making a random choice
+  console.log(userChoice);
 
   let result;
   //   let creates a CHANGING variable and result is the property containing the value returned by an event
