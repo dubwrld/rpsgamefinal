@@ -17,6 +17,8 @@ function playGame(userChoice) {
   //  the choices = what is in the brackets ["shuriken", "paperbomb", "kunai"]
   const computerChoice = choices[Math.floor(Math.random() * 3)];
   //   const computerChoice is a constant(const) variable where the computer is making a random choice
+  // Math.floor rounds number down
+  // Math.random chooses a random number of whatever is multplied by (*)
   console.log(userChoice);
 
   let result;
